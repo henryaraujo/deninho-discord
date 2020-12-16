@@ -1,3 +1,4 @@
 export enum CommandEnum {
-  HELLO = "hello"
+  HELLO = "hello",
+  CANCEL = "cancelar"
 }
