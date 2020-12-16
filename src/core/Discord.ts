@@ -12,14 +12,6 @@ import { app } from '@/config';
   import: app.import
 })
 export class DeninhoBOT {
-  @On("message")
-  async execute(
-    [message]: ArgsOf<"message">,
-    client: Client
-  ) {
-    console.log(message)
-  }
-
   @CommandNotFound()
   async notFound(cmd: CommandMessage) {
     cmd.reply(`command: ${cmd.commandName} not found!`);
